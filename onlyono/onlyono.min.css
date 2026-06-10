@@ -1,17 +1,1 @@
-.d-none {
-  display: none !important;
-}
-
-.position-unset {
-  position: unset !important;
-}
-
-@media (min-width: 1080px) {
-  body.indexPage #container #contents {
-    margin-top: 0 !important;
-  }
-}
-body.indexPage #header {
-  position: fixed;
-  background-color: transparent !important;
-}
+.d-none{display:none !important}.position-unset{position:unset !important}@media(min-width: 1080px){body.indexPage #container #contents{margin-top:0 !important}}body.indexPage #header{position:fixed;background-color:rgba(0,0,0,0) !important}body .top_logo svg{width:clamp(120px,10vw,150px)}

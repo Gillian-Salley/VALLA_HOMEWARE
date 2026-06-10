@@ -23,4 +23,9 @@ body{
             background-color: transparent !important;
         }
     }
+    .top_logo{
+        svg{
+            width: clamp(120px, 10vw, 150px);
+        }
+    }
 }

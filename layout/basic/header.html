@@ -61,19 +61,19 @@
 </div><!-- //toparea_state -->
 </div><!-- //toparea -->
 <div class="top_nav_box" id="top_nav_box">
-<div class="top_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}"></a></div><!-- //top_logo -->
+<div class="top_logo" module="Layout_LogoTop"><a href="/"><!--@import(/onlyono/svg/logo.html)--></a></div><!-- //top_logo -->
 <div class="top_mypage">
 <div class="tablet_detail_only" module="Layout_MobileAction">
 <a href="#none" onclick="{$go_back}"><img src="/SkinImg/img/back.svg"></a>
 </div>
 
-<a class="eSearch" href="javascript:;"><!--@import(/svg/icon-search.html)--></a>
-<a data-ez-item="login" href="/member/login.html" module="Layout_statelogoff">로그인</a>
-<a data-ez-item="logout" href="{$action_logout}" module="Layout_stateLogon">로그아웃</a>
+<a class="eSearch" href="javascript:;"><!--@import(/onlyono/svg/search.html)--></a>
+<a data-ez-item="login" href="/member/login.html" module="Layout_statelogoff"><!--@import(/onlyono/svg/lock.html)--></a>
+<a data-ez-item="logout" href="{$action_logout}" module="Layout_stateLogon"><!--@import(/onlyono/svg/lock.html)--></a>
 
 
-<a href="/order/basket.html" module="Layout_orderBasketcount"><!--@import(/svg/icon-cart.html)--><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
-<a href="/myshop/index.html"><!--@import(/svg/icon-user.html)--></a>
+<a href="/order/basket.html" module="Layout_orderBasketcount"><!--@import(/onlyono/svg/shopping-cart-one.html)--><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+<a href="/myshop/index.html"><!--@import(/onlyono/svg/people.html)--></a>
 
 
 <a class="eNavFold" href="javascript:;"><i aria-hidden="true" class="icon icoNav"></i></a>

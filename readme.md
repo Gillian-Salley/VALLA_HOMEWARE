@@ -102,8 +102,30 @@
 VALLA는 홈웨어 브랜드의 부드럽고 차분한 이미지를 전달하기 위해 자연적인 색감과 여백 중심의 레이아웃을 사용했습니다.  
 메인 배너와 상품 영역은 사용자가 브랜드의 분위기를 빠르게 이해하고, 자연스럽게 상품 탐색으로 이어질 수 있도록 구성했습니다.
 
+--- 
+
+<br>
+## ✨ Prefix Table
+
+| Prefix     | Description         | Example                       |
+| ---------- | ------------------- | ----------------------------- |
+| `feat`     | 새로운 기능 추가           | `feat: 로그인 페이지 UI 추가`         |
+| `fix`      | 버그 수정               | `fix: 모바일에서 버튼 클릭 오류 수정`      |
+| `design`   | UI/스타일 변경 (CSS 등)   | `design: 히어로 섹션 애니메이션 추가`     |
+| `style`    | 코드 포맷/정리 (기능 변화 없음) | `style: 들여쓰기 및 세미콜론 정리`       |
+| `refactor` | 코드 리팩토링 (동작 동일)     | `refactor: 헤더 구조 개선`          |
+| `comment`  | 주석 추가/수정            | `comment: 함수 설명 주석 추가`        |
+| `docs`     | 문서 수정 (README 등)    | `docs: 커밋 규칙 문서 추가`           |
+| `rename`   | 파일/폴더 이름 변경         | `rename: hero.css → main.css` |
+| `remove`   | 파일 삭제               | `remove: 사용하지 않는 이미지 삭제`      |
+| `test`     | 테스트 코드 추가/수정        | `test: 로그인 테스트 추가`            |
+| `chore`    | 설정/패키지/빌드 작업        | `chore: bootstrap 업데이트`       |
+| `init`     | 초기 프로젝트 설정          | `init: 프로젝트 초기 세팅`            |
+| `merge`    | 공동 작업 병합            | `merge: Gbranch -> main으로 병합` |
+
 <br>
 
+---
 [Back to Top](#top) | [English](#english)
 
 ---
@@ -198,5 +220,30 @@ VALLA uses natural colors and spacious layouts to express a soft and calm homewe
 The main banners and product sections are designed to help users understand the brand atmosphere quickly and move naturally into product browsing.
 
 <br>
+
+--- 
+
+<br>
+## ✨ Prefix Table
+
+| Prefix     | Description         | Example                       |
+| ---------- | ------------------- | ----------------------------- |
+| `feat`     | 새로운 기능 추가           | `feat: 로그인 페이지 UI 추가`         |
+| `fix`      | 버그 수정               | `fix: 모바일에서 버튼 클릭 오류 수정`      |
+| `design`   | UI/스타일 변경 (CSS 등)   | `design: 히어로 섹션 애니메이션 추가`     |
+| `style`    | 코드 포맷/정리 (기능 변화 없음) | `style: 들여쓰기 및 세미콜론 정리`       |
+| `refactor` | 코드 리팩토링 (동작 동일)     | `refactor: 헤더 구조 개선`          |
+| `comment`  | 주석 추가/수정            | `comment: 함수 설명 주석 추가`        |
+| `docs`     | 문서 수정 (README 등)    | `docs: 커밋 규칙 문서 추가`           |
+| `rename`   | 파일/폴더 이름 변경         | `rename: hero.css → main.css` |
+| `remove`   | 파일 삭제               | `remove: 사용하지 않는 이미지 삭제`      |
+| `test`     | 테스트 코드 추가/수정        | `test: 로그인 테스트 추가`            |
+| `chore`    | 설정/패키지/빌드 작업        | `chore: bootstrap 업데이트`       |
+| `init`     | 초기 프로젝트 설정          | `init: 프로젝트 초기 세팅`            |
+| `merge`    | 공동 작업 병합            | `merge: Gbranch -> main으로 병합` |
+
+<br>
+
+---
 
 [Back to Top](#top) | [한국어](#korean)
