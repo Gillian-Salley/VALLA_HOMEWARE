@@ -1,0 +1,17 @@
+.d-none {
+  display: none !important;
+}
+
+.position-unset {
+  position: unset !important;
+}
+
+@media (min-width: 1080px) {
+  body.indexPage #container #contents {
+    margin-top: 0 !important;
+  }
+}
+body.indexPage #header {
+  position: fixed;
+  background-color: transparent !important;
+}
