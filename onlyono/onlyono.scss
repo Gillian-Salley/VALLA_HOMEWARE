@@ -29,3 +29,53 @@ body{
         }
     }
 }
+
+#searchBarForm {
+  .xans-layout-searchheader {
+    background-color: transparent !important;
+
+    
+      .top_search_box {
+        border-bottom: 1px solid #ffffff;
+
+        #keyword {
+          background: transparent;
+          color: white;
+        }
+      }
+
+      .icon.icoClose {
+        &::before,
+        &::after {
+          background: white;
+        }
+      }
+
+      .top_search_title {
+        color: white;
+      }
+
+      .btnSearch {
+        svg {
+          path {
+            stroke: white;
+          }
+        }
+      }
+    
+  }
+}
+
+.top_mypage {
+  a {
+    .eNavFold {
+      .icon.icoNav {
+        color: white;
+      }
+    }
+  }
+}
+
+.layer_shadow.on {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}

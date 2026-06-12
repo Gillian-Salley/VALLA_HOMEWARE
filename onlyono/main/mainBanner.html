@@ -1,0 +1,169 @@
+<div class="swiper" id="heroSection" data-ez="module-0weuwji-1">
+	<div webpb-banner-code="v4kt" class="swiper-wrapper" hidden>
+    	<div webpb-banner class="swiper-slide">
+        	<a href="{#link}" target="{#link_target}">{#pc_thumb_tag}</a>
+    	</div>
+    	<div webpb-banner class="swiper-slide">
+        	<a href="{#link}" target="{#link_target}">{#pc_thumb_tag}</a>
+    	</div>    
+	</div>
+</div>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-05pcl08-1"><style>
+    .slide-active-0 #top_nav_box   svg  line{
+        stroke : white;    
+    }
+    .slide-active-0 #top_nav_box  svg  path{
+        fill : white;    
+    }    
+    .slide-active-1 #top_nav_box  svg  line{
+        stroke : black;    
+    }
+    .slide-active-1 #top_nav_box  svg  path{
+        fill : black;    
+    }
+    .slide-active-2 #top_nav_box  svg  line{
+        stroke : white;    
+    }
+    .slide-active-2 #top_nav_box  svg  path{
+        fill : white;    
+    }
+    
+    .slide-active-0 #header .inner .top_nav_box .top_category > ul > li > a{
+        color : #ffffff !important
+        }
+    .slide-active-1 #header .inner .top_nav_box .top_category > ul > li > a{
+        color : #000000
+        }
+    .slide-active-2 #header .inner .top_nav_box .top_category > ul > li > a{
+        color : #ffffff
+        }
+    
+</style></div>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-1mgfkzy-1">
+   <script>
+    window.addEventListener('DOMContentLoaded', function() {
+       const swiperhero = new Swiper('#heroSection.swiper', {
+  // ==========================================
+  // 1. 기본 설정 (기본 동작 및 외관)
+  // ==========================================
+  //direction: 'horizontal', // 슬라이드 방향: 'horizontal' 또는 'vertical'
+  speed: 300,              // 슬라이드가 전환되는 속도 (ms)
+  loop: true,              // 무한 루프 여부
+  rewind: false,           // loop가 false일 때, 마지막 슬라이드에서 다음을 누르면 처음으로 되돌아감 (v8 신기능)
+  
+  slidesPerView: 1,        // 한 번에 보여줄 슬라이드 개수 (숫자 또는 'auto')
+  //slidesPerGroup: 1,       // 한 번에 넘길 슬라이드 개수
+  spaceBetween: 0,         // 슬라이드 사이의 간격 (px)
+  centeredSlides: false,   // 활성화된 슬라이드를 가운데 정렬할지 여부
+  
+  initialSlide: 0,         // 시작할 때 먼저 보여줄 슬라이드 인덱스 (0부터 시작)
+  grabCursor: true,        // 슬라이드에 마우스를 올렸을 때 잡는 모양의 커서 표시
+  effect: 'fade',         // 전환 효과: 'slide', 'fade', 'cube', 'coverflow', 'flip', 'cards', 'creative'
+
+  // ==========================================
+  // 2. 자동 재생 (Autoplay)
+  // ==========================================
+  autoplay: {
+    delay: 4000,                   // 자동 재생 시간 간격 (ms)
+    disableOnInteraction: false,   // 유저가 터치/드래그한 후에도 자동 재생을 유지할지 여부
+    pauseOnMouseEnter: true,       // 마우스를 올리면 자동 재생을 일시정지할지 여부
+    stopOnLastSlide: false,        // 마지막 슬라이드에서 자동 재생을 멈출지 (loop: false일 때 작동)
+    reverseDirection: false,       // 역방향으로 자동 재생할지 여부
+  },
+
+  // ==========================================
+  // 3. 네비게이션 & 페이징 (UI 요소)
+  // ==========================================
+  // 화살표 버튼 설정
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    hideOnClick: false,            // 클릭 시 버튼을 숨길지 여부
+  },
+
+  // 인디케이터(점) 설정
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',               // 형태: 'bullets', 'fraction'(숫자), 'progressbar'(바), 'custom'
+    clickable: true,               // 점을 클릭했을 때 이동 가능 여부
+    dynamicBullets: false,         // 활성화된 점 주변으로 크기가 작아지는 다이내믹 효과
+  },
+
+  // 스크롤바 설정
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,               // 스크롤바를 드래그해서 움직일 수 있는지 여부
+    hide: true,                    // 사용하지 않을 때 스크롤바를 숨길지 여부
+  },
+
+  // ==========================================
+  // 4. 입력 제어 (접근성 및 조작)
+  // ==========================================
+  // 마우스 휠 제어
+  mousewheel: {
+    forceToAxis: true,             // 마우스 휠이 정확히 수평/수직일 때만 작동 (스크롤 간섭 방지)
+    invert: false,                 // 휠 방향 반전 여부
+  },
+
+  // 키보드 제어
+  keyboard: {
+    enabled: true,                 // 키보드 방향키로 제어 가능 여부
+    onlyInViewport: true,          // 슬라이더가 화면에 보일 때만 키보드 작동
+  },
+
+  // 터치/드래그 저항력
+  resistance: true,                // 슬라이드 처음과 끝에서 드래그할 때 저항감 주기 (loop: false일 때 유용)
+  resistanceRatio: 0.85,           // 저항력 세기 (0에 가까울수록 안 움직임)
+
+  // ==========================================
+  // 5. 반응형 설정 (Breakpoint)
+  // ==========================================
+  // 화면 크기별로 다른 설정을 적용 (모바일 퍼스트 기준)
+  breakpoints: {
+    // 화면 너비가 >= 320px 일 때
+   // 320: {
+    //  slidesPerView: 1,
+    //  spaceBetween: 10
+  //  },
+    // 화면 너비가 >= 768px 일 때 (태블릿)
+   // 768: {
+   //   slidesPerView: 2,
+   //   spaceBetween: 20
+  //  },
+    // 화면 너비가 >= 1024px 일 때 (PC)
+    //1024: {
+     // slidesPerView: 3,
+     // spaceBetween: 30
+    //}
+  },
+
+  // ==========================================
+  // 6. 이벤트 리스너 (Callback Functions)
+  // ==========================================
+  on: {
+      init: function () {
+        console.log('Swiper가 성공적으로 초기화되었습니다.');
+        
+        // [추가] 초기화 시 첫 번째 슬라이드 번호를 body 클래스에 부여
+        // loop: true 일 때는 realIndex를 써야 가짜(clone) 슬라이더 번호에 속지 않습니다.
+        const currentIdx = this.realIndex; 
+        document.body.classList.add(`slide-active-${currentIdx}`);
+      },
+      slideChange: function () {
+        console.log('슬라이드가 변경되었습니다. 현재 인덱스:', this.realIndex);
+        
+        // [추가] 정규식을 이용해 body에 붙어있던 기존 'slide-active-숫자' 클래스를 싹 지웁니다.
+        document.body.className = document.body.className.replace(/\bslide-active-\d+\b/g, '').trim();
+        
+        // [추가] 새로 바뀐 슬라이드의 실제 인덱스 번호 클래스를 추가합니다.
+        const currentIdx = this.realIndex;
+        document.body.classList.add(`slide-active-${currentIdx}`);
+      },
+      reachEnd: function () {
+        console.log('마지막 슬라이드에 도달했습니다.');
+      }
+    }
+});
+        })
+</script></div>
+<!--#ez="1/2"-->

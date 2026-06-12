@@ -18,3 +18,31 @@ body.indexPage #header {
 body .top_logo svg {
   width: clamp(120px, 10vw, 150px);
 }
+
+#searchBarForm .xans-layout-searchheader {
+  background-color: transparent !important;
+}
+#searchBarForm .xans-layout-searchheader .top_search_box {
+  border-bottom: 1px solid #ffffff;
+}
+#searchBarForm .xans-layout-searchheader .top_search_box #keyword {
+  background: transparent;
+  color: white;
+}
+#searchBarForm .xans-layout-searchheader .icon.icoClose::before, #searchBarForm .xans-layout-searchheader .icon.icoClose::after {
+  background: white;
+}
+#searchBarForm .xans-layout-searchheader .top_search_title {
+  color: white;
+}
+#searchBarForm .xans-layout-searchheader .btnSearch svg path {
+  stroke: white;
+}
+
+.top_mypage a .eNavFold .icon.icoNav {
+  color: white;
+}
+
+.layer_shadow.on {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
