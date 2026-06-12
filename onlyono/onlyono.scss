@@ -1,3 +1,10 @@
+$white: #ffffff;
+$black: #1E1E1E;
+$gray-hover: #777777;
+$header-bg: #8FA7B3;
+$white-hover: rgba(255, 255, 255, 0.5);
+
+
 .d-none{
     display: none !important;
 }
@@ -78,4 +85,320 @@ body{
 
 .layer_shadow.on {
   background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+
+
+
+#wrap {
+  * {
+    font-family: 'Presentation', 'Montserrat', 'Noto Sans Regular', '맑은 고딕',
+      'malgun gothic', '돋움', 'dotum', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    line-height: 1.8;
+  }
+
+  #header {
+    &.fixed {
+      .inner {
+        #top_nav_box {
+          svg {
+            line {
+              stroke: $white;
+            }
+
+            path {
+              fill: $white !important;
+            }
+          }
+
+          .top_logo {
+            svg {
+              width: clamp(100px, 9vw, 120px);
+            }
+          }
+        }
+
+        .top_nav_box {
+          .top_category {
+            > ul {
+              > li {
+                > a {
+                  color: $white !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      background-color: $header-bg !important;
+
+      /*
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      */
+    }
+
+    .inner {
+      #top_nav_box {
+        .top_logo {
+          svg {
+            transition: width 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.position-unset {
+  position: unset !important;
+}
+
+@media (min-width: 1080px) {
+  body {
+    &.indexPage {
+      #container {
+        #contents {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+body {
+  &.indexPage {
+    #header {
+      position: fixed;
+      background-color: transparent !important;
+    }
+  }
+
+  .top_logo {
+    svg {
+      width: clamp(120px, 10vw, 150px);
+    }
+  }
+}
+
+.layer_shadow {
+  &.on {
+    z-index: 999 !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+  }
+}
+
+.searchExpand {
+  #searchBarForm {
+    z-index: 1001;
+  }
+}
+
+#searchBarForm {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .xans-layout-searchheader {
+    background-color: transparent !important;
+    transform: none !important;
+    position: relative !important;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .top_search_box {
+      border-bottom: 1px solid $white;
+
+      #keyword {
+        background: transparent;
+        color: $white;
+      }
+    }
+
+    .icon {
+      &.icoClose {
+        &::before,
+        &::after {
+          background: $white;
+        }
+      }
+    }
+
+    .top_search_title {
+      color: $white;
+    }
+
+    .btnSearch {
+      svg {
+        path {
+          stroke: $white;
+        }
+      }
+    }
+  }
+}
+
+/* 스와이퍼 배너 */
+.slide-active-0 {
+  #top_nav_box {
+    svg {
+      line {
+        stroke: $white;
+      }
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  #header {
+    .inner {
+      .top_nav_box {
+        .top_category {
+          > ul {
+            > li {
+              > a {
+                color: $white;
+
+                &:hover {
+                  color: $white-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #top_nav_box {
+      a {
+        &:hover {
+          svg {
+            path {
+              fill: $white-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.slide-active-1 {
+  #top_nav_box {
+    svg {
+      line {
+        stroke: $black;
+      }
+
+      path {
+        fill: $black;
+      }
+    }
+  }
+
+  #header {
+    .inner {
+      .top_nav_box {
+        .top_category {
+          > ul {
+            > li {
+              > a {
+                color: $black;
+
+                &:hover {
+                  color: $gray-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #top_nav_box {
+      a {
+        &:hover {
+          svg {
+            path {
+              fill: $gray-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.slide-active-2 {
+  #top_nav_box {
+    svg {
+      line {
+        stroke: $white;
+      }
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  #header {
+    .inner {
+      .top_nav_box {
+        .top_category {
+          > ul {
+            > li {
+              > a {
+                color: $white;
+
+                &:hover {
+                  color: $white-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #top_nav_box {
+      a {
+        &:hover {
+          svg {
+            path {
+              fill: $white-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.top_mypage {
+  a {
+    .eNavFold {
+      .icon {
+        &.icoNav {
+          color: $white;
+        }
+      }
+    }
+  }
 }
