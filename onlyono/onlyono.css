@@ -1,3 +1,11 @@
+#wrap *{
+    font-family:'Presentation',"Montserrat","Noto Sans Regular","맑은 고딕","malgun gothic","돋움","dotum",sans-serif; 
+    font-weight: 400;
+    letter-spacing: -5%;
+    line-height: 1.8;
+}
+
+
 .d-none {
   display: none !important;
 }
@@ -19,8 +27,31 @@ body .top_logo svg {
   width: clamp(120px, 10vw, 150px);
 }
 
+.layer_shadow.on{
+  z-index: 999 !important;
+}
+.searchExpand #searchBarForm{
+  z-index: 1001;
+}
+
+#searchBarForm{
+    position:fixed;
+    left :0;
+    width:100%;
+    height:100%;
+    top:0;
+    z-index:-1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 #searchBarForm .xans-layout-searchheader {
   background-color: transparent !important;
+    transform:none !important;
+    position:relative !important;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 #searchBarForm .xans-layout-searchheader .top_search_box {
   border-bottom: 1px solid #ffffff;
@@ -37,7 +68,96 @@ body .top_logo svg {
 }
 #searchBarForm .xans-layout-searchheader .btnSearch svg path {
   stroke: white;
+    
 }
+	/* 스와이퍼 배너 */
+
+    .slide-active-0 #top_nav_box   svg  line{
+        stroke : white;    
+    }
+    .slide-active-0 #top_nav_box  svg  path{
+        fill : white;    
+    }    
+    .slide-active-1 #top_nav_box  svg  line{
+        stroke : #1E1E1E;    
+    }
+    .slide-active-1 #top_nav_box  svg  path{
+        fill : #1E1E1E;    
+    }
+    .slide-active-2 #top_nav_box  svg  line{
+        stroke : white;    
+    }
+    .slide-active-2 #top_nav_box  svg  path{
+        fill : white;    
+    }
+    
+    .slide-active-0 #header .inner .top_nav_box .top_category > ul > li > a{
+        color : #ffffff 
+        }
+    .slide-active-1 #header .inner .top_nav_box .top_category > ul > li > a{
+        color : #1E1E1E
+        }
+    .slide-active-2  #header .inner .top_nav_box .top_category > ul > li > a{
+        color : #ffffff
+        }
+    
+	/* hover시 색상 변경 */
+
+	.slide-active-0  #header #top_nav_box a:hover svg path{
+        fill : rgba(255, 255, 255, 0.5);
+    }
+	.slide-active-0 #header .inner .top_nav_box .top_category > ul > li > a:hover{
+		 color : rgba(255, 255, 255, 0.5);
+	}
+    /*
+	.slide-active-0 #header #top_nav_box .top_category a:hover{
+       fill : rgba(255, 255, 255, 0.5);
+    }
+	*/	
+
+	.slide-active-1  #header #top_nav_box a:hover svg path{
+        fill : #777777;
+    }
+
+    .slide-active-1 #header .inner .top_nav_box .top_category > ul > li > a:hover{
+		 color : #777777;
+	}
+
+	.slide-active-2  #header #top_nav_box a:hover svg path{
+        fill : rgba(255, 255, 255, 0.5);
+    }
+
+    .slide-active-2 #header .inner .top_nav_box .top_category > ul > li > a:hover{
+		 color : rgba(255, 255, 255, 0.5);
+    }
+
+	/* fixed(스크롤)시 색상 변경 */
+
+     #wrap  #header.fixed .inner #top_nav_box  svg  line{
+            stroke : white;    
+        }
+
+     #wrap  #header .inner #top_nav_box .top_logo svg{
+     transition: width 0.5s;
+    }
+     #wrap  #header.fixed .inner #top_nav_box .top_logo svg{
+     width: clamp(100px,9vw,120px)
+    }
+
+     #wrap  #header.fixed .inner .top_nav_box .top_category > ul > li > a{
+               color: white !important;
+            }
+            #wrap  #header.fixed  #top_nav_box  svg  path{
+                fill :white !important;
+            }
+
+            #wrap  #header.fixed {
+                background-color: #8FA7B3 !important;
+                /* backdrop-filter: blur(16px);
+                 -webkit-backdrop-filter: blur(16px); */
+            }
+
+
 
 .top_mypage a .eNavFold .icon.icoNav {
   color: white;
